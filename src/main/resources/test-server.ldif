@@ -1,0 +1,42 @@
+dn: dc=my-domain,dc=com
+dc: my-domain
+o: LDAP Account Manager Demo
+objectclass: top
+objectclass: dcObject
+objectclass: organization
+
+dn: cn=admins,dc=my-domain,dc=com
+cn: admins
+gidnumber: 10000
+objectclass: posixGroup
+
+dn: ou=groups,dc=my-domain,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+
+dn: cn=people,dc=my-domain,dc=com
+cn: people
+gidnumber: 10001
+objectclass: posixGroup
+
+dn: ou=people,dc=my-domain,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+dn: uid=pbindacz,ou=people,dc=my-domain,dc=com
+cn: Patryk Bindacz
+gidnumber: 10001
+givenname: Patryk
+homedirectory: /home/pbindacz
+loginshell: /bin/bash
+objectclass: posixAccount
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+sn: Bindacz
+uid: pbindacz
+uidnumber: 10000
+userpassword: $2a$12$.lbbJL5Y8pjQbbzb.A8SQeA14dgaw3EC1vMRN68TUfQQOGlnz34Ma
